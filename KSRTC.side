@@ -1,0 +1,870 @@
+{
+  "id": "ae896d47-9598-4638-a21d-4a5dcbf87039",
+  "version": "2.0",
+  "name": "KSRTC",
+  "url": " http://www.ksrtc.in/oprs-web/",
+  "tests": [{
+    "id": "8a2d91ec-c58a-4b3b-bee0-b97a8e575891",
+    "name": "PNR Enquiry",
+    "commands": [{
+      "id": "08585f5d-f538-4b31-bad3-08bcec3edc29",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ksrtc.in/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27a96ee6-b286-4020-881f-d52beea25120",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "218f0da1-7129-4b83-a30f-2aa1c3725067",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8522cbf3-64e1-4525-b757-eb074d27267c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active > .nav-link",
+      "targets": [
+        ["css=.active > .nav-link", "css:finder"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "832ae914-3fc0-4fde-afdc-9bddc1a908ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47441b47-94a8-46d5-98a3-e6933705c00c",
+      "comment": "",
+      "command": "type",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "423654273645725"
+    }, {
+      "id": "b67b2799-9ece-4d78-a21d-928f37f63193",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(5) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df74a72-cf6b-47d5-86a2-09643cc9f64e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "9999999999"
+    }, {
+      "id": "98d51a47-0d21-4193-9785-05c229381493",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "423654273645725"
+    }, {
+      "id": "c9a5305e-6683-41ff-a5f5-66e93e48b929",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "9999999999"
+    }]
+  }, {
+    "id": "7b553a3d-b322-4120-8932-c2dc02f8591b",
+    "name": "PNR Enquiry 2",
+    "commands": [{
+      "id": "20b13123-d35b-4905-ad70-958258ef467a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ksrtc.in/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f4c1102-1f2a-462c-a95e-701fede598fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7a7d9f4-ad81-4add-852a-b8aa28793b06",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(6) img",
+      "targets": [
+        ["css=li:nth-child(6) img", "css:finder"],
+        ["xpath=//li[6]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10039568-c9f2-4d34-a989-04d00f642fde",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4dde929-b79f-4c74-b711-46dc25b85d45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8304f73-57db-4978-ac5f-a6240b551a97",
+      "comment": "",
+      "command": "type",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "98764532"
+    }, {
+      "id": "6508f494-1df3-4bbe-b5e1-82f685e1aa18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(5) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "687921dc-4c02-43f6-9acb-e2dd71ee168f",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "7252537373"
+    }, {
+      "id": "4d8b7222-100b-4502-abc2-c2492335e25d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b97d9da-33c3-4a16-a68b-c06d11180868",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "7252537373"
+    }]
+  }, {
+    "id": "d8f8594a-f390-4e94-b7ca-06d5f3be2cb8",
+    "name": "PNR Enquiry 3",
+    "commands": [{
+      "id": "5f66b826-c832-43ed-a599-2f0f55ce2c17",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ksrtc.in/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4dce3c3-df87-4dc7-881c-094ff43c27e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f000d9c-5cf4-479f-a2ad-1abf815a113e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b771d08f-2209-4277-a809-03a958fd09be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b3b1dd-c41c-42f8-8362-525d01a21806",
+      "comment": "",
+      "command": "type",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "453782628"
+    }, {
+      "id": "4e1e56f4-a4c0-440f-a207-2d571bfee600",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(5) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16c002f9-e561-45fa-a3d2-6bcc4d83b1d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "9829282928"
+    }, {
+      "id": "b78025c7-463e-4f4d-9f7a-588c4fb2a99c",
+      "comment": "",
+      "command": "click",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75413a44-232b-4102-b7bc-6a0cd53117cc",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "453782628"
+    }, {
+      "id": "c20a2ab1-6b56-4e29-86b3-c6ee9fde28b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(5)",
+      "targets": [
+        ["css=.form-label-group:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b06def3-ee97-4c0a-bfb7-5f32bdf2bac7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b0d5cc6-3bd0-4389-87a7-2e4b2ecd2f81",
+      "comment": "",
+      "command": "click",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d11d85e-1f5b-481b-ab53-7b63292fa127",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "9829282928"
+    }]
+  }, {
+    "id": "7e536cd8-1699-4a74-9868-c28a1e43c59c",
+    "name": "PNR Enquiry 4",
+    "commands": [{
+      "id": "5eceda90-7dcf-4522-bf33-77590c12ef15",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ksrtc.in/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3736c9e3-efb1-4e42-be2d-274d1ba7181a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbdb4b4a-2280-4a79-bb4e-cbf0425dc6e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a724932-0c4d-4802-a4d3-9918213fefdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a92dddd-1d23-4eff-958d-b6fc328ee61c",
+      "comment": "",
+      "command": "click",
+      "target": "id=profile-tab",
+      "targets": [
+        ["id=profile-tab", "id"],
+        ["linkText=Transaction Status", "linkText"],
+        ["css=#profile-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Transaction Status')]", "xpath:link"],
+        ["xpath=//a[@id='profile-tab']", "xpath:attributes"],
+        ["xpath=//ul[@id='myTab']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#profile')]", "xpath:href"],
+        ["xpath=//form/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Transaction Status')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed575c01-a5bf-4f9f-88f1-74ce5e6d3597",
+      "comment": "",
+      "command": "click",
+      "target": "css=#OB-reference .form-label-group > label",
+      "targets": [
+        ["css=#OB-reference .form-label-group > label", "css:finder"],
+        ["xpath=//div[@id='OB-reference']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95fd1b65-777a-4794-927a-77814368408f",
+      "comment": "",
+      "command": "type",
+      "target": "id=bankRefNo",
+      "targets": [
+        ["id=bankRefNo", "id"],
+        ["name=bankRefNo", "name"],
+        ["css=#bankRefNo", "css:finder"],
+        ["xpath=//input[@id='bankRefNo']", "xpath:attributes"],
+        ["xpath=//div[@id='OB-reference']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "837383837"
+    }, {
+      "id": "611d7d1d-293a-4442-9026-1ad8bbf74403",
+      "comment": "",
+      "command": "click",
+      "target": "css=#OB-reference .form-label-group",
+      "targets": [
+        ["css=#OB-reference .form-label-group", "css:finder"],
+        ["xpath=//div[@id='OB-reference']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c5de4fd-90be-4f49-8d63-98880585bb8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bankRefNo",
+      "targets": [
+        ["id=bankRefNo", "id"],
+        ["name=bankRefNo", "name"],
+        ["css=#bankRefNo", "css:finder"],
+        ["xpath=//input[@id='bankRefNo']", "xpath:attributes"],
+        ["xpath=//div[@id='OB-reference']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e8829e-b0c1-4894-a714-bc13e8bc3694",
+      "comment": "",
+      "command": "click",
+      "target": "id=bankRefNo",
+      "targets": [
+        ["id=bankRefNo", "id"],
+        ["name=bankRefNo", "name"],
+        ["css=#bankRefNo", "css:finder"],
+        ["xpath=//input[@id='bankRefNo']", "xpath:attributes"],
+        ["xpath=//div[@id='OB-reference']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b865f2a-ea7d-4585-8bb1-86952fa6ecdc",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=bankRefNo",
+      "targets": [
+        ["id=bankRefNo", "id"],
+        ["name=bankRefNo", "name"],
+        ["css=#bankRefNo", "css:finder"],
+        ["xpath=//input[@id='bankRefNo']", "xpath:attributes"],
+        ["xpath=//div[@id='OB-reference']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "837383837"
+    }, {
+      "id": "8c74c424-0e5c-4b31-a02f-e46c9ab1c0b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=By Mobile Number",
+      "targets": [
+        ["linkText=By Mobile Number", "linkText"],
+        ["css=#profile .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'By Mobile Number')]", "xpath:link"],
+        ["xpath=//div[@id='profile']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#by-mobile')]", "xpath:href"],
+        ["xpath=//form/div[2]/div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'By Mobile Number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bcb3fc6-ea00-4f91-8824-dc3f33c547bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#by-mobilenumber .form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=#by-mobilenumber .form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fff8e49f-c398-4c0e-8397-e3f1406bd044",
+      "comment": "",
+      "command": "click",
+      "target": "css=#by-mobilenumber > .form-inline",
+      "targets": [
+        ["css=#by-mobilenumber > .form-inline", "css:finder"],
+        ["xpath=//div[@id='by-mobilenumber']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "694b8105-6872-4baa-860e-48e012b944c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "9282928292"
+    }, {
+      "id": "fe276a8b-2946-4c4a-ad6c-556c2f5fd785",
+      "comment": "",
+      "command": "click",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06688184-9d6a-4103-b3b8-0cc2191153e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f7b64cf-3d8a-481e-9465-b0a3c6635b68",
+      "comment": "",
+      "command": "click",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6164fc1a-00cc-43fe-8b84-34761848612c",
+      "comment": "",
+      "command": "click",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e8cd734-a91b-44f4-93ba-70c62e1378ac",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=tranxMobileNo",
+      "targets": [
+        ["id=tranxMobileNo", "id"],
+        ["css=#tranxMobileNo", "css:finder"],
+        ["xpath=//input[@id='tranxMobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='by-mobilenumber']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "9282928292"
+    }]
+  }, {
+    "id": "6fa7933f-37d3-4125-addc-3d728296ed89",
+    "name": "PNR Enquiry 5",
+    "commands": [{
+      "id": "cc586fc8-a902-4a53-bcfd-3551bba87595",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ksrtc.in/oprs-web/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e23e4ea-432c-4572-8a8c-ee4a232035bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15dddf73-7d2a-4cf3-942a-c5af576edb3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PNR Enquiry",
+      "targets": [
+        ["linkText=PNR Enquiry", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'PNR Enquiry')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/oprs-web/ticket/waitlist.do')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PNR Enquiry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfa6ffd7-9784-4274-be77-a9bba1c2fbd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label",
+      "targets": [
+        ["css=.form-inline:nth-child(2) > .form-label-group:nth-child(3) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5feafd2c-2cfd-4cb0-8d56-51cdf33c2156",
+      "comment": "",
+      "command": "type",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "73268247826"
+    }, {
+      "id": "f72fa9da-c0b2-49df-a106-645c4baad40f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-label-group:nth-child(5) > label",
+      "targets": [
+        ["css=.form-label-group:nth-child(5) > label", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d1a94e1-5738-4adb-8446-43ebdfe09783",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "3838933833"
+    }, {
+      "id": "a9a96555-4a0c-403b-a007-437b2488de91",
+      "comment": "",
+      "command": "click",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c9526e-ea91-41c7-a3bd-8ceb634ba721",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=pnrPrefixWithTktNo",
+      "targets": [
+        ["id=pnrPrefixWithTktNo", "id"],
+        ["name=pnrPrefixWithTktNo", "name"],
+        ["css=#pnrPrefixWithTktNo", "css:finder"],
+        ["xpath=//input[@id='pnrPrefixWithTktNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "73268247826"
+    }, {
+      "id": "e5252e16-d95b-4baa-a6bc-fe7a74fc7ea9",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchBtn",
+      "targets": [
+        ["id=searchBtn", "id"],
+        ["name=searchBtn", "name"],
+        ["css=.form-inline:nth-child(2) > #searchBtn", "css:finder"],
+        ["xpath=//input[@id='searchBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede31f14-e6d9-4fe4-8b5b-a0aa9b13c936",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Mobile number must start with 6 or 7 or 8 or 9.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d929878b-bb97-4399-bea2-21048c56e258",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Recruitment",
+      "targets": [
+        ["linkText=Recruitment", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Recruitment')]", "xpath:link"],
+        ["xpath=//div[@id='navbarCollapse']/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pages/recruitment.html')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Recruitment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d0a7e46-29a7-434d-9045-48551c58a119",
+      "comment": "",
+      "command": "type",
+      "target": "id=mobileNo",
+      "targets": [
+        ["id=mobileNo", "id"],
+        ["name=mobileNo", "name"],
+        ["css=#mobileNo", "css:finder"],
+        ["xpath=//input[@id='mobileNo']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "9383938393"
+    }, {
+      "id": "5fdd4a52-541c-417b-a2c7-cd631a7df806",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchBtn",
+      "targets": [
+        ["id=searchBtn", "id"],
+        ["name=searchBtn", "name"],
+        ["css=.form-inline:nth-child(2) > #searchBtn", "css:finder"],
+        ["xpath=//input[@id='searchBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='home']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ece153f1-f363-4bf7-bf7f-a338545409af",
+      "comment": "",
+      "command": "click",
+      "target": "id=errorMsg",
+      "targets": [
+        ["id=errorMsg", "id"],
+        ["css=#errorMsg", "css:finder"],
+        ["xpath=//div[@id='errorMsg']", "xpath:attributes"],
+        ["xpath=//section/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "eb0bd158-9d71-4fa5-a9d0-e2dd412d3230",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://www.ksrtc.in/oprs-web/"],
+  "plugins": []
+}
